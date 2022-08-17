@@ -1,5 +1,5 @@
 import styles from '../styles/pages/Profile.module.css';
-
+import ProtectedRoute from '../components/ProtectedRoute';
 import { useState } from 'react';
 import { useUserContext } from '../UserProvider';
 import Head from 'next/head';
@@ -77,4 +77,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProtectedRoute(Profile);
