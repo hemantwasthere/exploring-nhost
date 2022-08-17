@@ -11,10 +11,10 @@ const nhost = new NhostClient({
 function MyApp({ Component, pageProps }) {
   return (
     <NhostNextProvider nhost={nhost} initial={pageProps.nhostSession}>
-      <UserProvider>
-        <Component {...pageProps} />
-        <Toaster />
-      </UserProvider>
+        <UserProvider>
+          <Component {...pageProps} />
+          <Toaster />
+        </UserProvider>
     </NhostNextProvider>
   );
 }
