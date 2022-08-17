@@ -1,5 +1,4 @@
 import styles from '../styles/components/SignUp.module.css';
-
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
